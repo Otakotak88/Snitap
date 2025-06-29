@@ -26,3 +26,17 @@ header{
     font: 500 0.75rem/130% "inter", sans-serif;
     padding-block: 0.125rem;
 }
+
+/* Transitions */
+
+header img{
+    transition: transform 500ms;
+}
+
+header img[src*="Logo"]:hover{
+    transform: rotate(90deg);
+}
+
+header img#shopping-bag:hover{
+    transform: rotate(-20deg);
+}
