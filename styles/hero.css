@@ -1,0 +1,125 @@
+.hero{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.hero .changing-words{
+    all: unset;
+    display: inline-block;
+    width: min-content;
+    height: 5rem;
+    vertical-align: bottom;
+    overflow: hidden;
+    
+    & span{
+        all: unset;
+        display: block;
+        
+        animation: changingWords 6s infinite ease;
+    }
+    & :nth-child(1), :nth-child(4){
+        color: var(--snitap-sky-mid);
+    }
+    & :nth-child(2){
+        color: var(--snitap-joy-mid);
+    }
+    & :nth-child(3){
+        color: var(--snitap-leaf-mid);
+    }
+}
+
+/* Animações */
+
+@keyframes changingWords{
+    2%{
+        transform: translateY(1rem);
+    }
+    4%{
+        transform: translateY(-0.3rem);
+    }
+    6%{
+        transform: translateY(0.3rem);
+    }
+    8%{
+        transform: translateY(-0.1rem);
+    }
+    10%{
+        transform: translateY(0.1rem);
+    }
+    /* Final */
+    12%{
+        transform: translateY(0);
+    }
+
+    /* Primeira transição com bounce */
+    /* Base */
+    30%{
+        transform: translateY(0);
+    }
+
+    /* Bounce 6 etapas */
+    33%{
+        transform: translateY(-6rem);
+    }
+    35%{
+        transform: translateY(-4rem);
+    }
+    37%{
+        transform: translateY(-5.3rem);
+    }
+    39%{
+        transform: translateY(-4.7rem);
+    }
+    41%{
+        transform: translateY(-5.1rem);
+    }
+    42%{
+        transform: translateY(-4.9rem);
+    }
+    /* Final */
+    43%{
+        transform: translateY(-5rem);
+    }
+
+    /* Segunda transição com bounce */
+    /* Base */
+    63%{
+        transform: translateY(-5rem);
+    }
+    
+    /* Bounce 6 etapas */
+    66%{
+        transform: translateY(-11rem);
+    }
+    68%{
+        transform: translateY(-9rem);
+    }
+    70%{
+        transform: translateY(-10.3rem);
+    }
+    72%{
+        transform: translateY(-9.7rem);
+    }
+    74%{
+        transform: translateY(-10.1rem);
+    }
+    75%{
+        transform: translateY(-9.9rem);
+    }
+    /* Final */
+    76%{
+        transform: translateY(-10rem);
+    }
+
+    /* Terceira transição com bounce */
+    /* Base */
+    97%{
+        transform: translateY(-10rem)
+    }
+
+    /* Bounce 6 etapas*/
+    100%{
+        transform: translateY(-16rem)
+    }
+}

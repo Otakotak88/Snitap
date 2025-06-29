@@ -58,3 +58,7 @@ a{
 .relative{
     position: relative;
 }
+
+.container{
+    padding: 0 2rem;
+}
