@@ -30,6 +30,10 @@
     --text-span: 500 0.875rem/150% var(--font-family-text);
 }
 
+body{
+    background-color: var(--background);
+}
+
 h1{
     font: var(--text-h1);
 }
@@ -41,4 +45,16 @@ button{
 }
 span{
     font: var(--text-span);
+}
+img{
+    height: 2rem;
+    width: 2rem;
+}
+a{
+    color: var(--text-base);
+    text-decoration: none;
+}
+
+.relative{
+    position: relative;
 }
