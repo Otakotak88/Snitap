@@ -171,3 +171,67 @@
                     0 2px 5px hsla(0, 0%, 0%, 0.1);
     }
 }
+
+/* Hero Image */
+.hero-image-wrapper{
+    min-width: 35rem;
+    min-height: 28.875rem;
+    overflow: hidden;
+}
+
+.hero-image{
+    position: relative;
+    & img{
+        position: absolute;
+    }
+    & :nth-child(1){
+        height: 28.875rem;
+        width: 28.875rem;
+        right: 0.8125rem;
+        
+        transform: translateX(calc(100% + 27.8125rem));
+        animation: slideInHero 2.7s 200ms ease-in-out both;
+    }
+    & :nth-child(2){
+        height: 28.875rem;
+        width: 30.5rem;
+        right: 0;
+        z-index: 9;
+
+        transform: translateX(calc(100% + 2rem));
+        animation: slideInHero 2925ms 50ms cubic-bezier(.51,.14,.56,.98) both;
+    }
+    & :nth-child(3){
+        height: 4.5rem;
+        width: auto;
+        right: 25.5rem;
+        top: 8.4375rem;
+
+        transform: translateX(calc(100% + 39.5rem));
+        animation: slideInHero 2.8s 150ms cubic-bezier(.45,0,.55,1) both;
+    }
+    & :nth-child(4){
+        height: auto;
+        width: 2.5rem;
+        right: 0.125rem;
+        top: 16.0625rem;
+
+        transform: translateX(calc(100% + 42.5rem));
+        animation: slideInHero 2.9s 150ms cubic-bezier(.5,0,.5,1) both;
+    }
+}
+
+/* Animação slideInHero */
+
+@keyframes slideInHero {
+
+    50%{
+        transform: translateX(-1rem);
+    }
+    80%{
+        transform: translateX(0.25rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
