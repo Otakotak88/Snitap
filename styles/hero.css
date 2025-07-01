@@ -49,24 +49,24 @@
 
     /* Bounce 6 etapas */
     23%{
-        transform: translateY(-5.7rem);
+        transform: translateY(calc(-5rem - 12px));
     }
     25%{
-        transform: translateY(-4.5rem);
+        transform: translateY(calc(-5rem + 10px));
     }
     27%{
-        transform: translateY(-5.3rem);
+        transform: translateY(calc(-5rem - 7px));
     }
     29%{
-        transform: translateY(-4.7rem);
+        transform: translateY(calc(-5rem + 5px));
     }
     31%{
-        transform: translateY(-5.1rem);
+        transform: translateY(calc(-5rem - 3px));
     }
     32%{
-        transform: translateY(-4.9rem);
+        transform: translateY(calc(-5rem + 1px));
     }
-    /* Final */
+    Final
     33%{
         transform: translateY(-5rem);
     }
@@ -79,22 +79,22 @@
     
     /* Bounce 6 etapas */
     56%{
-        transform: translateY(-10.7rem);
+        transform: translateY(calc(-10rem - 12px));
     }
     58%{
-        transform: translateY(-9.5rem);
+        transform: translateY(calc(-10rem + 10px));
     }
     60%{
-        transform: translateY(-10.3rem);
+        transform: translateY(calc(-10rem - 7px));
     }
     62%{
-        transform: translateY(-9.7rem);
+        transform: translateY(calc(-10rem + 5px));
     }
     64%{
-        transform: translateY(-10.1rem);
+        transform: translateY(calc(-10rem - 3px));
     }
     65%{
-        transform: translateY(-9.9rem);
+        transform: translateY(calc(-10rem + 1px));
     }
     /* Final */
     66%{
@@ -103,28 +103,28 @@
 
     /* Terceira transição com bounce */
     /* Base */
-    87%{
+    86%{
         transform: translateY(-10rem)
     }
 
     /* Bounce 6 etapas*/
     90%{
-        transform: translateY(-15.7rem)
+        transform: translateY(calc(-15rem - 12px))
     }
     92%{
-        transform: translateY(-14.5rem);
+        transform: translateY(calc(-15rem + 10px));
     }
     94%{
-        transform: translateY(-15.3rem);
+        transform: translateY(calc(-15rem - 7px));
     }
     96%{
-        transform: translateY(-14.7rem);
+        transform: translateY(calc(-15rem + 5px));
     }
     98%{
-        transform: translateY(-15.1rem);
+        transform: translateY(calc(-15rem - 3px));
     }
     100%{
-        transform: translateY(-14.9rem);
+        transform: translateY(calc(-15rem + 1px));
     }
 }
 

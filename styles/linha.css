@@ -1,0 +1,47 @@
+.linhaWrapper{
+    padding-block: 2.5rem;
+    min-width: 100%;
+    overflow: hidden;
+    
+    & .linhaBG{
+        padding: 1rem 2rem;
+        background: linear-gradient(90deg, var(--snitap-sky-light), 
+                                           var(--snitap-joy-light),
+                                           var(--snitap-sky-light));
+        background-size: 800%;
+        background-position: 0;
+        overflow: hidden;
+
+        animation: ChangeBG 20s linear infinite;
+
+        & .linhaElementos{
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            animation: SlideLeft 2.5s linear infinite;
+            & h2{
+                font-size: 1.25rem;
+            }
+            & img{
+                height: 1rem;
+                width: 1rem;
+            }
+        }
+    }
+}
+
+@keyframes SlideLeft {
+    100%{
+        transform: translateX(-133px);
+    }
+}
+
+@keyframes ChangeBG {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 100%;
+    }
+}

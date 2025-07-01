@@ -32,8 +32,6 @@
 
 body{
     background-color: var(--background);
-    max-width: 1280px;
-    margin-inline: auto;
 }
 
 h1{
@@ -60,7 +58,10 @@ a{
 .relative{
     position: relative;
 }
-
 .container{
-    padding: 0 2rem;
+    padding-inline: 2rem;
+}
+.max-width{
+    max-width: 1280px;
+    margin-inline: auto;
 }
