@@ -1,7 +1,7 @@
 .gallery{
     padding-top: 2.5rem;
     display: grid;
-    grid-template-columns: 30.5rem 1fr 30.5rem;
+    grid-template-columns: 27rem 1fr 27rem;
     grid-template-rows: auto 25rem 25rem;
     gap: 2rem;
 
