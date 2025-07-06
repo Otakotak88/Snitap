@@ -3,6 +3,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding-block: 4rem 2rem;
+    margin-inline: 0 !important;
     & ul{
         margin: 0;
         padding: 0;
@@ -34,6 +35,7 @@ footer{
                 background-color: var(--snitap-sky-mid);
                 transform: scaleX(0);
                 transition: transform 350ms ease-out;
+                text-wrap: nowrap;
             }
         }
         & li:hover::after{
@@ -75,4 +77,19 @@ footer img{
 
 footer img[src*="Logo"]:hover{
     transform: rotate(90deg);
+}
+@media screen and (max-width: 1005px) {
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        .menu ul{
+            flex-direction: column;
+            gap: 1.5rem;
+            & li{
+                text-wrap: nowrap;
+                width: min-content;
+            }
+        }
+    }
 }

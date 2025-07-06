@@ -29,9 +29,11 @@
     --text-BTN: 500 1rem/150% var(--font-family-text);
     --text-span: 500 0.875rem/150% var(--font-family-text);
 }
-
 body{
     background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 h1{
